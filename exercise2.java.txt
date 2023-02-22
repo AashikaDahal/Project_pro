@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Tax{
+
+	  public static void main(String[] args) {
+	    Scanner sc = new Scanner(System.in);
+	    
+	    System.out.print("Enter the salary amount: ");
+	    double salary = sc.nextDouble();
+	    
+	    System.out.print("Enter gender (M/F): ");
+	    String gender = sc.next();
+	    
+	    System.out.print("Enter marital status (M/S/W): ");
+	    char maritalStatus = sc.next().charAt(0);
+	    
+	    double tax = 0;
+	    
+	    if (maritalStatus == 'S') {
+	      if (salary <= 400000) {
+	        tax = salary * 0.01;
+	      } else if (salary <= 500000) {
+	        tax = 4000 + (salary - 400000) * 0.1;
+	      } else {
+	        tax = 4000 + 100000 + (salary - 500000) * 0.2;
+	      }
+	    }
+	    
+	    System.out.println("Tax payable: " + tax);
+	  }
+	}

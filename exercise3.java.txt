@@ -1,0 +1,22 @@
+class location{
+public static void main(String[] args){
+Scanner scc= new scanner(System.in);
+String city="Kathmandu";
+Switch(city){
+case "Butwal":
+System.out.println("Welcome to Butwal");
+case "Dharan":
+System.out.println("Welocme to Dharan");
+case "Pokhara":
+System.out.println("Welcome to Pokhara");
+default:
+System.out.println("Somewhere else");
+break;
+
+
+
+
+}
+
+
+}
